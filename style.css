@@ -75,7 +75,7 @@ h1 {
 
 .ex {
     margin-top: -330px;
-    margin-bottom: -325px;
+    margin-bottom: -290px;
 }
 
 .exn {
@@ -96,13 +96,13 @@ h1 {
 .donate {
     scale: 0.3;
     margin-top: -180px;
-    margin-bottom: -200px;
+    margin-bottom: -190px;
     cursor: pointer;
 }
 
 .tutorial {
     margin-top: -615px;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     margin-left: -492px;
 }
 
