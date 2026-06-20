@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 110px;
 }
 
 ::selection {
@@ -53,58 +54,47 @@ h1 {
     padding-top: 120px;
 }
 
+.guide-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin: 200px auto;
+}
+
+.guide-image {
+    border-radius: 45px;
+    width: min(90vw, 1200px);
+    height: auto;
+    display: block;
+}
+
 .link-tab {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 200px;
-    scale: 0.2;
+    flex-wrap: wrap;
+    gap: 300px;
+    margin: 0;
+}
+
+.link-tab a {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
 }
 
 .link-icon {
-    transition: 0.25s;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    cursor: pointer;
+
+    transition: transform 0.25s;
 }
 
 .link-icon:hover {
-    scale: 1.1;
-    transition: 0.25s;
-}
-
-.ex {
-    margin-top: -330px;
-    margin-bottom: -290px;
-}
-
-.exn {
-    margin-top: -330px;
-    margin-bottom: -220px;
-}
-
-.hw {
-    margin-top: -330px;
-    margin-bottom: -200px;
-}
-
-.links {
-    margin-top: -175px;
-    margin-bottom: -200px;
-}
-
-.donate {
-    scale: 0.3;
-    margin-top: -180px;
-    margin-bottom: -190px;
-    cursor: pointer;
-}
-
-.tutorial {
-    margin-top: -615px;
-    margin-bottom: 50px;
-    margin-left: -492px;
-}
-
-.image {
-    scroll-margin-top: 120px;
-    scale: 0.7;
-    border-radius: 45px;
+    transform: scale(1.1);
 }
