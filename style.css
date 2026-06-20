@@ -5,7 +5,7 @@ html {
 }
 
 ::selection {
-    background: none;
+    background-color: #fd6f01;
     color: #ffffff;
 }
 
@@ -50,10 +50,6 @@ body {
 
 .disclaimer {
     background-color: red;
-}
-
-h1 {
-    padding-top: 120px;
 }
 
 .guide-section {
@@ -102,6 +98,25 @@ h1 {
 
 .link-icon:hover {
     transform: scale(1.1);
+}
+
+h1 {
+    padding-top: 5px;
+    
+}
+
+h2 {
+    max-width: 50%;
+}
+
+.source {
+    text-decoration: none;
+    color: #fd6f01;
+}
+
+.source:visited {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 /* Mobile */
