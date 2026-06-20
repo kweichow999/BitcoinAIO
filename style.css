@@ -1,7 +1,7 @@
 /* Desktop */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 120px;
+    scroll-padding-top: 100px;
 }
 
 ::selection {
@@ -117,14 +117,16 @@ h1 {
     .menu {
         justify-content: center;
         align-content: center;
-        top: 5px;
-        gap: 8px;
-        padding: 0 10px;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 6px;
+        padding: 0 5px;
     }
 
     .menu-button {
-        font-size: 16px;
-        padding: 8px 14px;
+        font-size: 14px;
+        padding: 7px 12px;
         box-shadow: 0 2px 8px rgba(247,147,26,.25);
     }
 
