@@ -1,7 +1,7 @@
 /* Desktop */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 110px;
+    scroll-padding-top: 120px;
 }
 
 ::selection {
@@ -71,6 +71,10 @@ h1 {
     display: block;
 }
 
+#btc {
+    margin-top: 120px;
+}
+
 .link-tab {
     display: flex;
     justify-content: center;
@@ -102,6 +106,13 @@ h1 {
 
 /* Mobile */
 @media (max-width: 768px) {
+    body {
+        padding-top: 160px;
+    }
+
+    html {
+        scroll-padding-top: 170px;
+    }
 
     .menu {
         top: 10px;
