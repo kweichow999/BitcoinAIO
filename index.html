@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>BitcoinAIO</title>
-
-    <link rel="icon" type="image/ico" href="material/btc.ico">
-
-    <link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Copy BTC donate address -->
-    <script>
-        
-        function copyBTCAddress() {
-            const address = "bc1qlkrvuv6mt3cc0szw0m5wjq5fyhkf5hupxandsk";
-            navigator.clipboard.writeText("");
-            navigator.clipboard.writeText(address);
-            alert(`Bitcoin address copied to clipboard! (${address})`);
-        }
+    <title>BitcoinAIO</title>
 
-    </script>
+    <meta name="description" content="BitcoinAIO: All-in-one Bitcoin self custody onboarding tool">
+
+    <meta property="og:title" content="BitcoinAIO">
+    <meta property="og:description" content="BitcoinAIO: All-in-one Bitcoin self custody onboarding tool">
+    <meta property="og:image" content="material/tn.png">
+
+    <link rel="icon" type="image/x-icon" href="material/btc.ico">
+    <link rel="stylesheet" href="style.css?v=11">
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5N24Y7C2L"></script>
@@ -182,5 +176,17 @@
 
     </section>
     
+    <!-- Copy BTC donate address -->
+    <script>
+        
+        function copyBTCAddress() {
+            const address = "bc1qlkrvuv6mt3cc0szw0m5wjq5fyhkf5hupxandsk";
+            navigator.clipboard.writeText("");
+            navigator.clipboard.writeText(address);
+            alert(`Bitcoin address copied to clipboard! (${address})`);
+        }
+
+    </script>
+
 </body>
 </html>

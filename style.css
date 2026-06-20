@@ -1,3 +1,4 @@
+/* Desktop CSS */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 110px;
@@ -63,7 +64,7 @@ h1 {
 }
 
 .guide-image {
-    border-radius: 45px;
+    border-radius: 30px;
     width: min(90vw, 1200px);
     height: auto;
     display: block;
@@ -73,7 +74,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 300px;
     margin: 0;
 }
@@ -91,10 +92,42 @@ h1 {
     object-fit: contain;
     display: block;
     cursor: pointer;
-
     transition: transform 0.25s;
 }
 
 .link-icon:hover {
     transform: scale(1.1);
+}
+
+/* Mobile CSS */
+@media (max-width: 768px) {
+
+    .menu {
+        top: 10px;
+        gap: 8px;
+        padding: 0 10px;
+    }
+
+    .menu-button {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+
+    .guide-image {
+        width: 95vw;
+        border-radius: 20px;
+    }
+
+    .link-tab {
+        gap: 15px;
+    }
+
+    .link-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .guide-section {
+        margin: 40px auto;
+    }
 }
