@@ -107,15 +107,17 @@ h1 {
 /* Mobile */
 @media (max-width: 768px) {
     body {
-        padding-top: 160px;
+        padding-top: 90px;
     }
 
     html {
-        scroll-padding-top: 170px;
+        scroll-padding-top: 140px;
     }
 
     .menu {
-        top: 10px;
+        justify-content: center;
+        align-content: center;
+        top: 5px;
         gap: 8px;
         padding: 0 10px;
     }
@@ -141,6 +143,6 @@ h1 {
     }
 
     .guide-section {
-        margin: 40px auto;
+        margin: 20px auto 40px auto;
     }
 }
