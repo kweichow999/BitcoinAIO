@@ -37,7 +37,6 @@ body {
     text-shadow: 2px 2px 4px black;
     border-radius: 999px;
     padding: 7px 14px;
-    box-shadow: 0 4px 15px rgba(247,147,26,.25);
     transition: all .2s;
 
     font-size: 28px;
