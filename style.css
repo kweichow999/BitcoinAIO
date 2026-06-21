@@ -100,13 +100,13 @@ body {
     transform: scale(1.1);
 }
 
-h1 {
+h2 {
     padding-top: 5px;
     
 }
 
-h2 {
-    max-width: 50%;
+p {
+    max-width: 66%;
 }
 
 .source {
@@ -143,6 +143,10 @@ h2 {
         font-size: 14px;
         padding: 7px 12px;
         box-shadow: 0 2px 8px rgba(247,147,26,.25);
+    }
+
+    p {
+        max-width: 66%;
     }
 
     .guide-image {
