@@ -181,7 +181,11 @@
             <div class="link-tab">
 
                 <a onclick="copyBTCAddress()">
-                    <img src="material/btc.webp" class="link-icon" title="Copy address to donate Bitcoin" alt="Donate Bitcoin to: bc1qfy5s2y352s47kmdusrf06ey87cqps8mtayv48n">
+                    <img src="material/btc.webp" class="link-icon" title="Copy address to donate BTC (SHA256)" alt="Donate BTC to: bc1qfy5s2y352s47kmdusrf06ey87cqps8mtayv48n">
+                </a>
+
+                <a onclick="copyXBTAddress()">
+                    <img src="material/xbt.webp" class="link-icon" title="Copy address to donate XBT (Blake2B)" alt="Donate XBT to: bc1qpgp5mzw0ukdf7qysj94w5vwetah2q7a7lnt7m9">
                 </a>
 
             </div>
@@ -201,7 +205,18 @@
             const address = "bc1qfy5s2y352s47kmdusrf06ey87cqps8mtayv48n";
             navigator.clipboard.writeText("");
             navigator.clipboard.writeText(address);
-            alert(`Bitcoin address copied to clipboard! (${address})`);
+            alert(`BTC address copied to clipboard! (${address})`);
+        }
+
+    </script>
+
+    <script>
+        
+        function copyXBTAddress() {
+            const address = "bc1qpgp5mzw0ukdf7qysj94w5vwetah2q7a7lnt7m9";
+            navigator.clipboard.writeText("");
+            navigator.clipboard.writeText(address);
+            alert(`XBT address copied to clipboard! (${address})`);
         }
 
     </script>
