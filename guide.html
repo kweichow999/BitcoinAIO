@@ -64,6 +64,8 @@
 
         <a href="#next" class="menu-button">What next?</a>
 
+        <a href="faq.html" class="menu-button">FAQ</a>
+
         <a href="index.html" class="menu-button">Visuals</a>
 
         <a href="#links_donate" class="menu-button">Links / Donate</a>
@@ -128,7 +130,8 @@
             <b>Kraken</b>: intermediate users, great security, lower fees <br>
             <b>OKX</b>: advanced users, high liquidity, lowest fees <br><br>
 
-            Exchange links with <b>free bonuses and discounts</b>:
+            Exchange links with <b>free bonuses and discounts!</b> <br>
+            (Coinbase, Kraken, OKX from left to right):
 
         </p>
             
@@ -138,10 +141,11 @@
                 <img src="material/coinbase.webp" class="link-icon" title="Coinbase" alt="Coinbase Crypto Exchange (KYC)">
             </a>
 
+        
             <a href="https://invite.kraken.com/JDNW/v8wfclfx" target="_blank" rel="noopener noreferrer">
                 <img src="material/kraken.webp" class="link-icon" title="Kraken" alt="Kraken Crypto Exchange (KYC)">
             </a>
-
+        
             <a href="https://my.okx.com/en-eu/join/39592772" target="_blank" rel="noopener noreferrer">
                 <img src="material/okx.webp" class="link-icon" title="OKX" alt="OKX Crypto Exchange (KYC)">
             </a>
@@ -158,10 +162,11 @@
             Below are non-KYC options for advanced users, which don't require ID to sign up but
             are more technically demanding. <br><br>
             Here are some key points about these non-KYC crypto exchanges: <br><br>
-            <b>HODL HODL</b> (left): seasoned users, advanced features, Bitcoin-only<br>
-            <b>Koinly</b> (right): more options <br><br>
+            <b>HODL HODL</b>: seasoned users, advanced features, Bitcoin-only<br>
+            <b>Koinly</b>: more options <br><br>
 
-            Exchange links with <b>free bonuses and discounts</b>: 
+            Exchange links with <b>free bonuses and discounts!</b> <br>
+            (HODLHODL, Koinly from left to right):
 
         </p>
 
@@ -202,7 +207,8 @@
             To do that, generate a fresh Bitcoin address from your hardware wallet and send your Bitcoins from the exchange to it. <br>
             After that you're done! <br><br>
 
-            Hardware wallet links with <b>free bonuses and discounts</b>: 
+            Hardware wallet links with <b>free bonuses and discounts</b>! <br>
+            (Trezor, Blockstream Jade, Bitbox from left to right):
 
         </p>
 
@@ -269,11 +275,11 @@
 
             <div class="link-tab">
 
-                <a onclick="copyBTCAddress()">
+                <a onclick="copyAddress('bc1qfy5s2y352s47kmdusrf06ey87cqps8mtayv48n', 'BTC')">
                     <img src="material/btc.webp" class="link-icon" title="Copy address to donate BTC (SHA256)" alt="Donate BTC to: bc1qfy5s2y352s47kmdusrf06ey87cqps8mtayv48n">
                 </a>
 
-                <a onclick="copyXBTAddress()">
+                <a onclick="copyAddress('bc1qpgp5mzw0ukdf7qysj94w5vwetah2q7a7lnt7m9', 'XBT')">
                     <img src="material/xbt.webp" class="link-icon" title="Copy address to donate XBT (Blake2B)" alt="Donate XBT to: bc1qpgp5mzw0ukdf7qysj94w5vwetah2q7a7lnt7m9">
                 </a>
 
@@ -303,22 +309,11 @@
     <!-- Copy BTC donate address -->
     <script>
         
-        function copyBTCAddress() {
-            const address = "bc1qfy5s2y352s47kmdusrf06ey87cqps8mtayv48n";
+        function copyAddress(destination, ticker) {
+            const address = destination;
             navigator.clipboard.writeText("");
             navigator.clipboard.writeText(address);
-            alert(`BTC address copied to clipboard! (${address})`);
-        }
-
-    </script>
-
-    <script>
-        
-        function copyXBTAddress() {
-            const address = "bc1qpgp5mzw0ukdf7qysj94w5vwetah2q7a7lnt7m9";
-            navigator.clipboard.writeText("");
-            navigator.clipboard.writeText(address);
-            alert(`XBT address copied to clipboard! (${address})`);
+            alert(`${ticker} address copied to clipboard! (${address})`);
         }
 
     </script>

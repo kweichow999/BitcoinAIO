@@ -65,6 +65,8 @@
 
         <a href="#next" class="menu-button">What next?</a>
 
+        <a href="faq.html" class="menu-button">FAQ</a>
+
         <a href="guide.html" class="menu-button">Text-only</a>
 
         <a href="#links_donate" class="menu-button">Links / Donate</a>
@@ -139,7 +141,7 @@
         <img src="material/4.webp" class="guide-image" alt="3. How to store Bitcoin?">
 
         <div class="link-tab">
-
+            
             <a href="https://affil.trezor.io/SH14l" target="_blank" rel="noopener noreferrer">
                 <img src="material/trezor.webp" class="link-icon" title="Trezor" alt="Trezor Hardware Wallet">
             </a>
@@ -180,11 +182,11 @@
 
             <div class="link-tab">
 
-                <a onclick="copyBTCAddress()">
+                <a onclick="copyAddress('bc1qfy5s2y352s47kmdusrf06ey87cqps8mtayv48n', 'BTC')">
                     <img src="material/btc.webp" class="link-icon" title="Copy address to donate BTC (SHA256)" alt="Donate BTC to: bc1qfy5s2y352s47kmdusrf06ey87cqps8mtayv48n">
                 </a>
 
-                <a onclick="copyXBTAddress()">
+                <a onclick="copyAddress('bc1qpgp5mzw0ukdf7qysj94w5vwetah2q7a7lnt7m9', 'XBT')">
                     <img src="material/xbt.webp" class="link-icon" title="Copy address to donate XBT (Blake2B)" alt="Donate XBT to: bc1qpgp5mzw0ukdf7qysj94w5vwetah2q7a7lnt7m9">
                 </a>
 
@@ -201,22 +203,11 @@
     <!-- Copy BTC donate address -->
     <script>
         
-        function copyBTCAddress() {
-            const address = "bc1qfy5s2y352s47kmdusrf06ey87cqps8mtayv48n";
+        function copyAddress(destination, ticker) {
+            const address = destination;
             navigator.clipboard.writeText("");
             navigator.clipboard.writeText(address);
-            alert(`BTC address copied to clipboard! (${address})`);
-        }
-
-    </script>
-
-    <script>
-        
-        function copyXBTAddress() {
-            const address = "bc1qpgp5mzw0ukdf7qysj94w5vwetah2q7a7lnt7m9";
-            navigator.clipboard.writeText("");
-            navigator.clipboard.writeText(address);
-            alert(`XBT address copied to clipboard! (${address})`);
+            alert(`${ticker} address copied to clipboard! (${address})`);
         }
 
     </script>
